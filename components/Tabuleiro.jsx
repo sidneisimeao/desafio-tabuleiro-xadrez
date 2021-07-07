@@ -2,18 +2,19 @@ import Casa from "./Casa";
 import styles from "../styles/Tabuleiro.module.css";
 
 export default function Tabuleiro() {
-  let comecaBranca = true;
+  let startWithWhite = true;
+
   function preencherCor(posicao) {
-    let color = posicao % 2 === 0 ? true : false;
+    let isBlack = posicao % 2 === 0 ? true : false;
+
+    if (!startWithWhite) {
+      isBlack = !isBlack;
+    }
 
     if (posicao % 8 === 0) {
-      comecaBranca = !comecaBranca;
+      startWithWhite = !startWithWhite;
     }
-
-    if (!comecaBranca && posicao % 8 !== 0) {
-      color = !color;
-    }
-    return color;
+    return isBlack;
   }
 
   function construirTabuleiro() {

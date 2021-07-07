@@ -1,7 +1,7 @@
 .tabuleiro {
-  height: 816px;
-  width: 816px;
-  border: 1px solid white;
+  height: 600px;
+  width: 600px;
   display: flex;
   flex-wrap: wrap;
+  background-color: white;
 }
