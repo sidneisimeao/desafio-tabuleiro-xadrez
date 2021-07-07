@@ -1,0 +1,13 @@
+.casa {
+  width: 100px;
+  height: 100px;
+}
+
+.black {
+  /*background-color: black;*/
+  background-color: rgb(247, 247, 247);
+}
+
+.white {
+  background-color: white;
+}
